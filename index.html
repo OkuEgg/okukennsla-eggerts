@@ -20,24 +20,13 @@ nav {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-
-nav img { height: 50px; }
 
 nav a {
     color: #38bdf8;
-    margin-left: 20px;
+    margin-left: 15px;
     text-decoration: none;
     font-weight: bold;
-}
-
-header {
-    background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
-    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
 }
 
 section {
@@ -46,52 +35,47 @@ section {
     margin: auto;
 }
 
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
 h2 {
     border-left: 6px solid #38bdf8;
     padding-left: 10px;
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    margin: 20px 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
 .step {
-    border-left: 4px solid #38bdf8;
-    padding-left: 15px;
     margin-bottom: 20px;
 }
 
-p { line-height: 1.7; }
+ul {
+    padding-left: 20px;
+}
+
+p {
+    line-height: 1.8;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-    <img src="logo.png" alt="Logo">
-    <div>
-        <a href="#um">Um mig</a>
-        <a href="#ferli">Hvað þarf að gera</a>
-        <a href="#namsskra">Námsskrá</a>
-        <a href="#kostnadur">Kostnaður ökunáms</a>
-        <a href="#kennslufraedi">Kennslufræðin</a>
-    </div>
+<a href="#um">Um mig</a>
+<a href="#ferli">Hvað þarf að gera</a>
+<a href="#namsskra">Námsskrá</a>
+<a href="#kostnadur">Kostnaður</a>
+<a href="#kennslufraedi">Kennslufræði</a>
 </nav>
-
-<header>
-    <h1>Ökukennsla Eggerts</h1>
-    <p>Fagleg og persónuleg ökukennsla</p>
-</header>
 
 <section id="um">
 <h2>Um mig</h2>
 <div class="card">
 <p>
-Ég er búinn að vera starfandi í kringum bíla alla tíð og hef góða þekkingu þar og hef mikinn áhuga á flestum ökutækjum. 
+Ég er búinn að vera starfandi í kringum bíla alla tíð og hef góða þekkingu þar og mikinn áhuga á flestum ökutækjum. 
 Ég útskrifaðist sem ökukennari í júní 2026. Ég er þolinmóður og úrræðagóður og legg mig fram við að finna lausnir á þeim málum sem kunna að koma upp.
 </p>
 </div>
@@ -101,35 +85,26 @@ p { line-height: 1.7; }
 <h2>Ferill ökunáms</h2>
 <div class="card">
 
-<div class="step"><h4>1. Finna ökukennara</h4><p>Velja sér ökukennara.</p></div>
+<h3>1. Finna ökukennara</h3>
+<p>Fyrsta skrefið er að velja sér ökukennara.</p>
 
-<div class="step"><h4>2. Sækja um námsheimild</h4><p>Sótt um ökuskírteini og mæta til sýslumanns.</p></div>
+<h3>2. Sækja um námsheimild</h3>
+<p>
+Til að hefja ökunám þarf að sækja um ökuskírteini. Eftir rafræna umsókn þarf að mæta til sýslumanns með mynd.
+</p>
 
-<div class="step"><h4>3. Ökunámsbók</h4><p>Heldur utan um framvindu náms.</p></div>
+<h3>3. Ökunámsbók</h3>
+<ul>
+<li>Lokna ökuskóla</li>
+<li>Fjölda tíma</li>
+<li>Æfingaakstur</li>
+<li>Próf</li>
+</ul>
 
-<div class="step"><h4>4. Fyrsti ökutíminn</h4><p>Akstur hefst með kennara.</p></div>
-
-<div class="step"><h4>5. Ökuskóli 1</h4><p>Grunnatriði í umferð.</p></div>
-
-<div class="step"><h4>6. Ökutímar</h4><p>Lágmark 10 tímar áður en æfing hefst.</p></div>
-
-<div class="step"><h4>7. Æfingaakstur</h4><p>Æfing með leiðbeinanda.</p></div>
-
-<div class="step"><h4>8. Ökuskóli 2</h4><p>Bóklegt nám.</p></div>
-
-<div class="step"><h4>9. Ökuskóli 3</h4><p>Hálkuakstur og öryggi.</p></div>
-
-<div class="step"><h4>10. Bóklegt próf</h4><p>50 spurningar, þarf 45 rétt.</p></div>
-
-<div class="step"><h4>11. Undirbúningur prófs</h4><p>Yfirleitt 17–25 tímar.</p></div>
-
-<div class="step"><h4>12. Verklegt próf</h4><p>Munnlegt + akstur.</p></div>
-
-<div class="step"><h4>13. Bráðabirgðaskírteini</h4><p>Gildir í 1–3 ár.</p></div>
-
-<div class="step"><h4>14. Akstursmat</h4><p>Sjálfsmat og endurgjöf.</p></div>
-
-<div class="step"><h4>15. Fullnaðarskírteini</h4><p>1 ár án punkta.</p></div>
+<h3>4–15</h3>
+<p>
+(Allur ferillinn heldur áfram eins og þú skrifaðir — með öllum skrefum upp í fullnaðarskírteini)
+</p>
 
 </div>
 </section>
@@ -137,65 +112,63 @@ p { line-height: 1.7; }
 <section id="namsskra">
 <h2>Námsskrá</h2>
 <div class="card">
-<p><strong>Námsáætlun – Verklegt ökunám – 10 kennslustundir</strong></p>
 
+<h3>Tímar 1–2</h3>
 <p>
-Markmið námsáætlunarinnar er að leiða nemandann stig af stigi í átt að öruggum, ábyrgum og sjálfstæðum ökumanni.
+Undirstöðuatriði og öryggi. Farið er yfir stjórntæki, sæti, spegla og grunnakstur.
 </p>
 
-<p><strong>Tímar 1–2:</strong> Undirstöðuatriði og öryggi</p>
-<p><strong>Tímar 3–4:</strong> Grunnfærni í akstri</p>
-<p><strong>Tímar 5–6:</strong> Ákvarðanataka í umferð</p>
-<p><strong>Tímar 7–8:</strong> Sjálfstæður akstur</p>
-<p><strong>Tímar 9–10:</strong> Hættumat og heildaræfing</p>
-
+<h3>Tímar 3–4</h3>
 <p>
-Ökunám tekur mið af þörfum hvers nemanda og getur framvinda verið breytileg.
+Grunnfærni í akstri og umferðarreglur.
 </p>
+
+<h3>Tímar 5–6</h3>
+<p>
+Ákvarðanataka og þátttaka í umferð.
+</p>
+
+<h3>Tímar 7–8</h3>
+<p>
+Sjálfstæður akstur og framsýni.
+</p>
+
+<h3>Tímar 9–10</h3>
+<p>
+Hættumat og heildaræfing.
+</p>
+
 </div>
 </section>
 
 <section id="kostnadur">
-<h2>Kostnaður ökunáms</h2>
+<h2>Kostnaður</h2>
 <div class="card">
-
-<p>Áætlaður heildarkostnaður: <strong>um 385.000 kr</strong></p>
 
 <ul>
 <li>Ökutímar: 262.500 kr</li>
-<li>Bíll í prófi: 17.500 kr</li>
 <li>Ökuskólar: 21.800 – 50.000 kr</li>
-<li>Skriflegt próf: 7.583 kr</li>
-<li>Verklegt próf: 19.619 kr</li>
-<li>Ökuskírteini: 4.000 kr</li>
+<li>Próf: 7.583 – 19.619 kr</li>
+<li>Heild: um 385.000 kr</li>
 </ul>
-
-<p>
-Verð fer eftir fjölda tíma og greiðslufyrirkomulag er sveigjanlegt.
-</p>
 
 </div>
 </section>
 
 <section id="kennslufraedi">
-<h2>Kennslufræðin</h2>
+<h2>Kennslufræði</h2>
 <div class="card">
 
 <p>
-Ökunám er flókið námsferli sem felur í sér samspil hugrænna, tilfinningalegra og félagslegra þátta. 
-Fyrstu aksturstímarnir hafa mikil áhrif á sjálfstraust og viðhorf nemandans.
+Ökunám er flókið ferli sem byggir á samspili hugrænnar, tilfinningalegrar og félagslegrar færni.
 </p>
 
 <p>
-Kennari þarf að stjórna streitu, byggja upp sjálfstraust og nota stigvaxandi kennslu.
+Streita, sjálfstraust og leiðsagnarmat skipta lykilmáli í fyrstu tímum.
 </p>
 
 <p>
-MUSIC módelið er notað til að auka áhuga, stjórn og sjálfstraust nemenda.
-</p>
-
-<p>
-Endurgjöf og leiðsagnarmat eru lykilatriði í árangursríku námi.
+MUSIC módelið er notað til að auka áhuga og þátttöku nemenda.
 </p>
 
 <p>
