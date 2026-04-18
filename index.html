@@ -6,6 +6,10 @@
 <title>Ökukennsla Eggerts</title>
 
 <style>
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -25,7 +29,7 @@ nav img {
     height: 50px;
 }
 
-nav .links a {
+nav a {
     color: #38bdf8;
     margin-left: 20px;
     text-decoration: none;
@@ -42,7 +46,6 @@ header {
 
 header h1 {
     font-size: 40px;
-    margin-bottom: 10px;
 }
 
 .btn {
@@ -56,9 +59,15 @@ header h1 {
 }
 
 section {
-    padding: 40px;
+    padding: 50px;
     max-width: 1000px;
     margin: auto;
+}
+
+h2 {
+    border-left: 6px solid #38bdf8;
+    padding-left: 10px;
+    font-size: 28px;
 }
 
 .card {
@@ -67,11 +76,20 @@ section {
     border-radius: 12px;
     margin: 20px 0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-h2 {
-    border-left: 5px solid #38bdf8;
-    padding-left: 10px;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight {
+    border-left: 6px solid #38bdf8;
+    background: linear-gradient(to right, #f8fafc, #ffffff);
+}
+
+p {
+    line-height: 1.7;
 }
 </style>
 </head>
@@ -80,7 +98,7 @@ h2 {
 
 <nav>
     <img src="logo.png" alt="Logo">
-    <div class="links">
+    <div>
         <a href="#um">Um mig</a>
         <a href="#namsskra">Námsskrá</a>
         <a href="#plan">Kennsluáætlun</a>
@@ -103,44 +121,36 @@ h2 {
 </p>
 
 <p>
-Ég er menntaður bifreiðasmiður og löggildur bílasali og hef starfað við það í mörg ár. Sú reynsla hefur veitt mér sterka innsýn í ökutæki, akstur og öryggi í umferð.
-</p>
-
-<p>
-Ég hef mikinn áhuga á bílum og ferðalögum og hef ferðast víða um landið, meðal annars í útilegum og jeppamennsku. Sú reynsla nýtist í kennslu þar sem lögð er áhersla á raunverulegar aðstæður.
-</p>
-
-<p>
-Ég er fjölskyldumaður og á fjögur börn og legg áherslu á þolinmæði, jákvætt viðmót og öruggt námsumhverfi.
+Ég er menntaður bifreiðasmiður og löggildur bílasali og hef starfað við það í mörg ár.
 </p>
 </div>
 </section>
 
 <section id="namsskra">
-<h2>Námsskrá</h2>
-<div class="card">
+<h2>Námsskrá ökunáms</h2>
+
+<div class="card highlight">
 
 <p>
-Nám í ökukennslu miðar að því að undirbúa nemendur fyrir öruggan og sjálfstæðan akstur með samþættingu fræðilegrar þekkingar og verklegrar færni.
+Námsskrá ökunáms hjá <strong>Ökukennslu Eggerts</strong> byggir á heildstæðri kennslufræðilegri nálgun þar sem 
+lögð er áhersla á einstaklingsmiðað nám, virkni nemenda og stigvaxandi færniþróun.
 </p>
 
-<h3>Markmið</h3>
-<ul>
-<li>Þekking á umferðarlögum</li>
-<li>Færni í akstri</li>
-<li>Sjálfstæð ákvarðanataka</li>
-<li>Ábyrg hegðun</li>
-</ul>
-
-<h3>Kennslufræði</h3>
 <p>
-Kennslan tekur mið af stigskiptingu Bloom þar sem nemandi þróast frá skilningi yfir í beitingu og sjálfstætt mat á aðstæðum. 
-Einnig er byggt á reynslunámi þar sem nemandi lærir með virkri þátttöku í akstri.
+Tekið er mið af breytileika nemenda þar sem hver einstaklingur lærir á sinn hátt. 
+Notaðar eru fjölbreyttar aðferðir til að mæta mismunandi námsstílum.
 </p>
 
-<h3>Námsmat</h3>
 <p>
-Framfarir eru metnar stöðugt með endurgjöf frá kennara með áherslu á öryggi og færni.
+Kennslan byggir á reynslunámi samkvæmt <strong>David Kolb</strong>, þar sem nemandi lærir í gegnum eigin reynslu og endurgjöf.
+</p>
+
+<p>
+Einnig er stuðst við stigskiptingu <strong>Benjamin Bloom</strong> þar sem nemandi fer frá skilningi yfir í sjálfstæða ákvarðanatöku.
+</p>
+
+<p>
+MUC-nálgun (Markmið – Útfærsla – Check) er notuð til að tryggja markvissa og einstaklingsmiðaða kennslu.
 </p>
 
 </div>
@@ -149,46 +159,26 @@ Framfarir eru metnar stöðugt með endurgjöf frá kennara með áherslu á ör
 <section id="plan">
 <h2>Kennsluáætlun</h2>
 <div class="card">
-
 <ul>
-<li><strong>Grunnstig:</strong> Stjórntæki og einfaldur akstur</li>
-<li><strong>Þjálfun:</strong> Akstur í umferð</li>
-<li><strong>Sjálfstæði:</strong> Ákvarðanataka</li>
-<li><strong>Undirbúningur:</strong> Fyrir ökupróf</li>
+<li>Grunnstig – stjórntæki og akstur</li>
+<li>Þjálfun – akstur í umferð</li>
+<li>Sjálfstæði – ákvarðanataka</li>
+<li>Undirbúningur – ökupróf</li>
 </ul>
-
-<p>
-Kennslan byggir á stigvaxandi færniþróun þar sem nemandi öðlast aukið sjálfstæði.
-</p>
-
 </div>
 </section>
 
 <section id="nemar">
 <h2>Fyrir ökunema</h2>
 <div class="card">
-
-<p>
-Tímabókanir fara fram í síma <strong>855-5535</strong>.
-</p>
-
-<p>
-Nemendur þurfa ekki að mæta með neinn búnað þar sem bíll og gögn eru útveguð.
-</p>
-
-<p>
-Lágmark er 10 tímar fyrir æfingarakstur. Nemandi þarf að kunna umferðarreglur og lesa umferð áður en æfingarakstur hefst.
-</p>
-
+<p>Tímabókanir: 855-5535</p>
+<p>Engin sérstök gögn þarf að taka með.</p>
+<p>Lágmark 10 tímar fyrir æfingarakstur.</p>
 </div>
 </section>
 
 <section id="contact">
 <h2>Hafa samband</h2>
 <div class="card">
-<p><strong>Sími:</strong> 855-5535</p>
+<p>Sími: 855-5535</p>
 </div>
-</section>
-
-</body>
-</html>
