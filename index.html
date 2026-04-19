@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ökukennsla Eggerts</title>
 
-<style>
-html { scroll-behavior: smooth; }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+<style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f1f5f9;
     color: #0f172a;
 }
@@ -18,7 +18,7 @@ body {
 /* NAV */
 nav {
     background: #0f172a;
-    padding: 18px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -29,358 +29,141 @@ nav {
 nav a {
     color: #38bdf8;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    font-weight: 600;
 }
 
-nav a:hover {
-    color: white;
-}
+nav a:hover { color: white; }
 
-/* HEADER */
-header {
-    background: linear-gradient(to right, #0f172a, #1e293b);
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 50px 20px;
     color: white;
 }
 
-header img {
-    max-width: 500px;
-    width: 90%;
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
     border-radius: 12px;
-    margin-bottom: 15px;
 }
 
-header p {
-    font-size: 22px;
+.hero h1 {
+    font-size: 52px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 26px;
 }
 
 /* CONTENT */
 section {
-    padding: 60px 20px;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
+    padding: 60px 20px;
 }
 
 .card {
     background: white;
     padding: 30px;
     border-radius: 12px;
-    margin: 25px 0;
+    margin-bottom: 30px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
-/* TITLES */
 h2 {
     border-left: 6px solid #38bdf8;
-    padding-left: 12px;
-    margin-bottom: 20px;
+    padding-left: 10px;
 }
 
-h3 {
-    margin-top: 30px;
-    color: #0f172a;
-}
+p { line-height: 1.9; }
+ul, ol { padding-left: 25px; line-height: 1.8; }
 
-/* TEXT */
-p {
-    line-height: 1.9;
-    margin-bottom: 15px;
-}
-
-ul, ol {
-    padding-left: 25px;
-    line-height: 1.8;
-}
-
-/* SMOOTH SECTIONS */
-section:nth-child(even) {
-    background: #e2e8f0;
-}
 </style>
 </head>
 
 <body>
 
 <nav>
-<a href="#um">Um mig</a>
-<a href="#ferli">Hvað þarf að gera</a>
-<a href="#namsskra">Námsskrá</a>
+<a href="#kennari">Kennarinn</a>
+<a href="#ferli">Að byrja ökunám</a>
+<a href="#namsskra">Námskrá</a>
 <a href="#kostnadur">Kostnaður ökunáms</a>
 <a href="#kennslufraedi">Kennslufræðin</a>
+<a href="#contact">Hafa samband</a>
 </nav>
 
-<!-- LOGO -->
-<header style="text-align:center; padding:40px 20px;">
-    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" style="max-width:600px; width:95%; border-radius:12px;">
-    <h1>Ökukennsla Eggerts</h1>
-<p>Fagleg og persónuleg ökukennsla</p>
-</header>
-</nav>
+<div class="hero">
+<div class="hero-content">
+<h1>Ökukennsla Eggerts</h1>
+<p>📞 855-5535</p>
+</div>
+</div>
 
-<section id="um">
-<h2>Um mig</h2>
+<section id="kennari">
+<h2>Kennarinn</h2>
 <div class="card">
-<p>
-Ég er búinn að vera starfandi í kringum bíla alla tíð og hef góða þekkingu þar og hef mikinn áhuga flest öllum ökutækjum. 
-Útskrifaðist sem ökukennari í júní 2026. Ég er þolinmóður og úrræðagóður og er til í að finna lausn á þeim málum sem kunna að koma upp.
-</p>
+<p>Ég hef um árabil starfað á sviði bifreiða og öðlast víðtæka reynslu...</p>
 </div>
 </section>
 
 <section id="ferli">
-<h2>Ferill ökunáms</h2>
+<h2>Að byrja ökunám</h2>
 <div class="card">
-
-<h3>1. Finna ökukennara</h3>
-<p>Fyrsta skrefið í ökunáminu er að velja sér ökukennara.</p>
-
-<h3>2. Sækja um námsheimild</h3>
-<p>
-Til að hefja ökunám þarf að sækja um ökuskírteini (námsheimild). 
-Eftir að rafræn umsókn hefur verið send inn þarf umsækjandi að mæta á skrifstofu sýslumanns með passamynd (35×45 mm) og veita undirritun.
-</p>
-
-<h3>3. Ökunámsbók</h3>
-<p>Ökunámsbókin heldur utan um framvindu námsins:</p>
-<ul>
-<li>lokna ökuskóla</li>
-<li>fjölda ökutíma</li>
-<li>staðfestingu á æfingaakstri</li>
-<li>niðurstöður prófa</li>
-</ul>
-
-<h3>4. Fyrsti ökutíminn</h3>
-<p>Akstur með ökukennara hefst.</p>
-
-<h3>5. Ökuskóli 1</h3>
-<ul>
-<li>umferðarskilningur</li>
-<li>umferðarreglur</li>
-<li>umferðarmerki</li>
-<li>umferðarsálfræði</li>
-</ul>
-
-<h3>6. Ökutímar</h3>
-<p>Lágmark 10 tímar áður en æfingaakstur hefst.</p>
-
-<h3>7. Æfingaakstur</h3>
-<p>Leiðbeinandi þarf heimild. Gildir í 18 mánuði.</p>
-
-<h3>8. Ökuskóli 2</h3>
-<p>Bóklegt nám – gott að taka tímanlega.</p>
-
-<h3>9. Ökuskóli 3 og ökugerði</h3>
-<ul>
-<li>lokið Ökuskóla 1</li>
-<li>minnst 10 tímar</li>
-</ul>
-<p>Hálkuakstur og öryggi.</p>
-
-<h3>10. Bóklegt próf</h3>
-<ul>
-<li>50 spurningar</li>
-<li>45 þarf rétt</li>
-</ul>
-
-<h3>11. Undirbúningur</h3>
-<p>17–25 tímar alls.</p>
-
-<h3>12. Verklegt próf</h3>
-<p>Munnlegt + akstur. Lágmark 80 stig.</p>
-
-<h3>13. Bráðabirgðaskírteini</h3>
-<p>Gildir í 1–3 ár.</p>
-
-<h3>14. Akstursmat</h3>
+<p><strong>Ferill ökunáms</strong></p>
 <ol>
-<li>Sjálfsmat</li>
-<li>Akstur</li>
-<li>Endurgjöf</li>
+<li>Finna ökukennara</li>
+<li>Sækja um námsheimild</li>
+<li>Ökunámsbók</li>
+<li>Fyrsti ökutíminn</li>
+<li>Ökuskóli 1</li>
+<li>Ökutímar</li>
+<li>Æfingaakstur</li>
+<li>Ökuskóli 2</li>
+<li>Ökuskóli 3</li>
+<li>Bóklegt próf</li>
+<li>Undirbúningur</li>
+<li>Verklegt próf</li>
+<li>Bráðabirgðaskírteini</li>
+<li>Akstursmat</li>
+<li>Fullnaðarskírteini</li>
 </ol>
-
-<h3>15. Fullnaðarskírteini</h3>
-<ul>
-<li>1 ár án punkta</li>
-<li>lokið akstursmati</li>
-</ul>
-
 </div>
 </section>
 
 <section id="namsskra">
-<h2>Námsskrá</h2>
-
+<h2>Námskrá</h2>
 <div class="card">
-
-<h3>Námsáætlun – Verklegt ökunám – 10 kennslustundir</h3>
-
-<p>
-Markmið námsáætlunarinnar er að leiða nemandann stig af stigi í átt að öruggum, ábyrgum og sjálfstæðum ökumanni. 
-Námið fylgir hæfnisviðmiðum verklegs ökunáms samkvæmt námskrá þar sem áhersla er lögð á þróun frá einföldum grunnfærnisþáttum 
-yfir í samhæfðan og meðvitaðan akstur.
-</p>
-
-<h3>Tímar 1–2 – Undirstöðuatriði og öryggisatriði</h3>
-<p>
-Í fyrstu tveimur kennslustundunum er lögð áhersla á að nemandinn læri að undirbúa bílinn fyrir akstur og skilji mikilvægi réttrar öryggisstöðu ökumanns. 
-Farið er yfir aðlögun sæta, spegla og öryggisbúnaðar ásamt helstu stjórntækjum bílsins. Nemandinn lærir að ræsa bílinn og nota kúplinguna rétt 
-ásamt því að stöðva á öruggan hátt. Kennsla fer fram á lokuðu svæði eða þar sem umferð er ekki mikil og hröð með sýnikennslu, leiðbeinandi æfingum 
-og endurgjöf kennara. Mat fer fram með beinni athugun á framistöðu nemandans og hæfni hans til að framkvæma aðgerðir örugglega og skipulega.
-</p>
-
-<h3>Tímar 3–4 – Grunnfærni í akstri</h3>
-<p>
-Á næsta stigi lærir nemandinn að aka af stað, skipta um gíra og stjórna hraða og stöðva á mjúkan og öruggan hátt. Ökutímar fara fram í rólegum 
-umferðargötum. Farið er yfir forgangsreglur, bið- og stöðvunarskyldu og rétta staðsetningu á veginum. Kennslan byggir á leiðsögn og endurgjöf þar 
-sem nemandinn fær tækifæri til að gera mistök og læra af þeim í öruggu umhverfi. Mat felst í athugun á öryggisvitund, réttri notkun stjórntækja 
-og getu til að lesa umferðarmerki og aðstæður.
-</p>
-
-<h3>Tímar 5–6 – Þáttaka í umferð og ákvarðanataka</h3>
-<p>
-Þegar grunnfærni er komin hjá ökunema er áherslan færð yfir á ákvarðanatöku og framsýni í umferð. Nemandinn æfir akstur í þéttbýli þar sem hann þarf 
-að taka tillit til annarra vegfarenda, velja akstursleiðir og aðlaga hraða að umferð og aðstæðum. Farið er yfir akstur í gatnamótum, beygjur og stöðvun 
-í umferðarþrengslum. Kennsluaðferðir fela í sér samræður, spurningar og leiðsögn kennara þar sem nemandinn er hvattur til að útskýra eigin ákvarðanir. 
-Mat byggir á því að nemandinn sýni skilning á reglum og taki öruggar ákvarðanir og viðhaldi góðri yfirsýn í umferð.
-</p>
-
-<h3>Tímar 7–8 – Framsýni og sjálfstæður akstur</h3>
-<p>
-Á þessu stigi er lögð áhersla á að nemandinn þrói með sér framsýni, skipulag og sjálfstæði. Ökutímar fara fram á fjölbreyttum vegum, þar á meðal í 
-hringtorgum, við umferðarljós og á götum með hærri aksturshraða. Nemandinn framkvæmir sjálfstæð verkefni eins og að velja leið og skipuleggja akstur 
-samkvæmt fyrirmælum ökukennara. Markmiðið er að hann geti metið aðstæður fram í tímann og brugðist við með öryggi og yfirvegun. Kennslan byggir á 
-verkefnaakstri og sjálfsmati þar sem nemandinn fær endurgjöf og tækifæri til að rýna í eigin framistöðu.
-</p>
-
-<h3>Tímar 9–10 – Hættumat og heildaræfing</h3>
-<p>
-Í lok námsins er áherslan á að samþætta alla færniþætti og undirbúa nemandann fyrir sjálfstæðan akstur. Farið er yfir viðbrögð við óvæntum aðstæðum, 
-forvarnarhugsun og neyðarstöðvun. Nemandinn framkvæmir heildaræfingu þar sem hann sýnir sjálfstæði, öryggi og virðingu fyrir öðrum vegfarendum. 
-Lokamat felst í því að nemandinn geti ekið á öruggan, skipulegan og ábyrgan hátt í samræmi við umferðarreglur og hæfniviðmið námskrár.
-</p>
-
-<p>
-Ökunám tekur mið af þörfum hvers og eins nemanda. Því getur verið að framvinda í einstökum þáttum námsins sé breytileg og að sumir nemendur þurfi 
-meiri tíma og þjálfun til að ná fullnægjandi hæfni.
-</p>
-
+<p>Námsáætlun – Verklegt ökunám...</p>
 </div>
 </section>
 
 <section id="kostnadur">
 <h2>Kostnaður ökunáms</h2>
 <div class="card">
-
-<p><strong>Áætlaður kostnaður: um 385.000 kr</strong></p>
-
-<ul>
-<li>Ökutímar: 262.500 kr</li>
-<li>Bíll í prófi: 17.500 kr</li>
-<li>Ökuskólar: 21.800 – 50.000 kr</li>
-<li>Skriflegt próf: 7.583 kr</li>
-<li>Verklegt próf: 19.619 kr</li>
-<li>Ökuskírteini: 4.000 kr</li>
-</ul>
-
-<p>
-Lengd kennslustundar er 45 mínútur og verð 17.500 kr.
-</p>
-
+<p>Áætlaður kostnaður: ~385.000 kr</p>
 </div>
 </section>
 
 <section id="kennslufraedi">
 <h2>Kennslufræðin</h2>
-
 <div class="card">
-
-<p>
-Ökunám er ekki eingöngu tæknilegt ferli þar sem nemandi lærir að stjórna ökutæki heldur er það flókið námsferli sem felur í sér samspil hugrænna, tilfinningalegra og félagslegra þátta. Þegar ungir einstaklingar hefja ökunám eru þeir að stíga inn í nýtt hlutverk þar sem þeir bera ábyrgð á eigin öryggi og annarra í umferðinni. Fyrstu aksturstímarnir eru sérstaklega mikilvægir þar sem þeir móta fyrstu reynslu nemandans af akstri og hafa þar með áhrif á sjálfstraust, námsvilja og viðhorf til umferðar til framtíðar.
-</p>
-
-<p>
-Í upphafi náms upplifa margir nemendur streitu og óöryggi. Þessi streita getur haft bæði jákvæð og neikvæð áhrif. Hún getur aukið einbeitingu en einnig hamlað námi ef hún verður of mikil. Þess vegna er hlutverk ökukennarans lykilatriði. Hann þarf að geta lesið í aðstæður, metið stöðu nemandans og brugðist við á faglegan og markvissan hátt.
-</p>
-
-<p>
-Markmið þessa verkefnis er að greina hvernig ökukennari getur með kennslufræðilegum aðferðum, fagmennsku og markvissu námsmati stutt unga ökunema í fyrstu aksturstímum. Sérstök áhersla er lögð á streitu, sjálfstraust, kennsluaðferðir og tengingu við námskrá.
-</p>
-
-<h3>Námskrá og kennslufræði</h3>
-
-<p>
-Námskrá ökunáms leggur áherslu á að nemendur þrói með sér hæfni til að aka á öruggan, ábyrgan og sjálfstæðan hátt. Þetta felur í sér bæði verklega færni og hugræna hæfni, svo sem að greina aðstæður, taka ákvarðanir og meta áhættu. Kennsla þarf því að vera skipulögð þannig að hún styðji við þessa heildrænu hæfni.
-</p>
-
-<p>
-Í kennslufræði er lögð áhersla á að nám sé virkt ferli. Nemendur þurfa að taka þátt í eigin námi og skilja það sem þeir eru að gera. Þetta á sérstaklega við í ökunámi þar sem nemandi þarf að geta útskýrt eigin ákvarðanir í umferðinni. Kennari getur stuðlað að þessu með því að spyrja spurninga og hvetja til ígrundunar.
-</p>
-
-<p>
-Stigvaxandi kennsla er lykilatriði. Nemandi byrjar á einföldum verkefnum, til dæmis að stjórna ökutæki á rólegu svæði, og færist smám saman yfir í flóknari aðstæður. Þetta hjálpar til við að draga úr streitu og byggja upp sjálfstraust.
-</p>
-
-<p>
-MUSIC módelið er gagnlegt í þessu samhengi. Með því að tryggja að nemandi upplifi mikilvægi, áhuga, stjórn, sjálfstraust og umhyggju er hægt að auka árangur. Til dæmis getur kennari aukið mikilvægi með því að tengja kennslu við raunverulegar hættur í umferðinni.
-</p>
-
-<h3>Fagmennska og starfsvitund</h3>
-
-<p>
-Fagmennska ökukennara er grundvallaratriði í árangursríku námi. Kennari þarf að vera fyrirmynd og sýna ábyrgð í öllum aðstæðum. Samskipti skipta miklu máli. Nemendur eru oft viðkvæmir fyrir gagnrýni og því þarf að setja hana fram á uppbyggilegan hátt.
-</p>
-
-<p>
-Kennari þarf einnig að vera meðvitaður um eigin áhrif. Tónn, líkamsmál og viðbrögð geta haft mikil áhrif á líðan nemandans. Ef kennari sýnir pirring getur það aukið streitu nemandans, en ef hann sýnir ró og stuðning getur það haft róandi áhrif.
-</p>
-
-<p>
-Starfsvitund felst í því að skilja að ökukennsla hefur langtímaáhrif. Kennari er að móta hegðun framtíðarökumanna og þar með áhrif á umferðaröryggi í samfélaginu.
-</p>
-
-<h3>Sálfræðilegir þættir</h3>
-
-<p>
-Streita er óhjákvæmilegur hluti af ökunámi. Samkvæmt Yerkes-Dodson lögmálinu er ákveðið stig streitu sem hámarkar frammistöðu. Ef streita fer yfir það stig minnkar árangur. Kennari þarf því að halda streitu nemandans innan viðráðanlegra marka.
-</p>
-
-<p>
-Sjálfstraust er annar lykilþáttur. Nemendur sem hafa trú á eigin getu eru líklegri til að takast á við áskoranir. Kennari getur byggt upp sjálfstraust með því að skapa aðstæður þar sem nemandi upplifir árangur og fær jákvæða endurgjöf.
-</p>
-
-<p>
-Athygli er takmörkuð auðlind. Í akstri þarf að skipta henni á milli margra þátta. Nýir ökumenn eiga erfitt með þetta og því þarf að einfalda aðstæður í upphafi.
-</p>
-
-<h3>Kennsluaðferðir</h3>
-
-<p>
-Árangursrík kennsla felur í sér skýrt skipulag og stigvaxandi nálgun. Kennari þarf að brjóta niður verkefni og kenna eina færni í einu. Með tímanum er hægt að bæta við fleiri þáttum.
-</p>
-
-<p>
-Endurgjöf er lykilatriði. Hún þarf að vera skýr, uppbyggileg og tímanleg. Jákvæð endurgjöf eykur sjálfstraust og hvetur nemanda til áframhaldandi náms.
-</p>
-
-<h3>Námsmat</h3>
-
-<p>
-Leiðsagnarmat er mikilvægur þáttur í ökunámi. Kennari fylgist stöðugt með framförum og veitir endurgjöf. Nemandi lærir þannig hvað þarf að bæta.
-</p>
-
-<p>
-Sjálfsmat er einnig mikilvægt. Með því að spyrja nemanda hvernig honum fannst ganga er hann hvattur til ígrundunar.
-</p>
-
-<p>
-Í fyrstu tímum þarf að skapa öryggi. Kennari byrjar á einföldum verkefnum og eykur flækjustig smám saman. Ef nemandi verður stressaður þarf að hægja á ferlinu.
-</p>
-
-<p>
-Kennslufræði, fagmennska og sálfræði eru lykilþættir í ökunámi. Með markvissri kennslu er hægt að draga úr streitu og auka sjálfstraust. Þetta leiðir til betri námsárangurs og aukins öryggis í umferðinni.
-</p>
-
+<p>Ökunám er flókið námsferli sem byggir á samspili...</p>
 </div>
 </section>
+
+<section id="contact">
+<h2>Hafa samband</h2>
+<div class="card">
+<p><strong>Eggert ökukennari</strong></p>
+<p>📞 855-5535</p>
+<p>📧 eggertokukennari@eggertokukennari.is</p>
+</div>
+</section>
+
+</body>
+</html>
