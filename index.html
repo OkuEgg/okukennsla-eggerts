@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ökukennsla Eggerts</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 <style>
+html { scroll-behavior: smooth; }
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     background: #f1f5f9;
     color: #0f172a;
 }
@@ -21,23 +21,20 @@ nav {
     padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    position: sticky;
-    top: 0;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: #38bdf8;
+    margin: 10px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
 }
-
-nav a:hover { color: white; }
 
 /* HERO */
 .hero {
-    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
-    height: 75vh;
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,34 +42,28 @@ nav a:hover { color: white; }
     color: white;
 }
 
-.hero-content {
-    background: rgba(0,0,0,0.6);
-    padding: 40px;
-    border-radius: 12px;
-}
-
 .hero h1 {
-    font-size: 52px;
+    font-size: 48px;
     margin: 0;
 }
 
 .hero p {
     font-size: 26px;
+    margin-top: 10px;
 }
 
 /* CONTENT */
 section {
+    padding: 50px;
     max-width: 1000px;
     margin: auto;
-    padding: 60px 20px;
 }
 
 .card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 h2 {
@@ -80,17 +71,9 @@ h2 {
     padding-left: 10px;
 }
 
-h3 {
-    margin-top: 30px;
-}
+p { line-height: 1.8; }
+ul { padding-left: 20px; }
 
-p { line-height: 1.9; }
-ul, ol { padding-left: 25px; line-height: 1.8; }
-
-.divider {
-    margin: 40px 0;
-    border-top: 1px solid #ccc;
-}
 </style>
 </head>
 
@@ -102,56 +85,68 @@ ul, ol { padding-left: 25px; line-height: 1.8; }
 <a href="#namsskra">Námskrá</a>
 <a href="#kostnadur">Kostnaður ökunáms</a>
 <a href="#kennslufraedi">Kennslufræðin</a>
-<a href="#contact">Hafa samband</a>
+<a href="#samband">Hafa samband</a>
 </nav>
 
 <div class="hero">
-<div class="hero-content">
+<div>
 <h1>Ökukennsla Eggerts</h1>
-<p>📞 855-5535</p>
+<p>855-5535</p>
 </div>
 </div>
 
 <section id="kennari">
 <h2>Kennarinn</h2>
 <div class="card">
-
-<p>Ég hef um árabil starfað á sviði bifreiða og öðlast víðtæka reynslu og þekkingu á þeim vettvangi. Ég útskrifaðist úr bifreiðasmíði árið 2002 og starfaði í kjölfarið á verkstæðum um árabil. Síðar lauk ég löggildingu sem bílasali og hef starfað við sölu bifreiða í um 15 ár. Í júní 2026 útskrifaðist ég sem ökukennari.</p>
-
-<p>Í kennslu legg ég ríka áherslu á þolinmæði, skýr samskipti og einstaklingsmiðaða nálgun. Ég tel mikilvægt að nemendur fái svigrúm til að læra á sínum hraða og að kennslan taki mið af ólíkum þörfum og bakgrunni þeirra. Markmið mitt er að skapa öruggt og uppbyggilegt námsumhverfi þar sem traust ríkir og nemendur öðlast sjálfstraust í akstri. Ég legg jafnframt áherslu á ábyrgð, öryggi í umferðinni og góða dómgreind, sem eru lykilatriði í þjálfun nýrra ökumanna.</p>
-
-<p>Starfsreynsla mín hefur kennt mér að vera úrræðagóður og lausnamiðaður, eiginleikar sem nýtast vel í kennslu þar sem ólíkar aðstæður geta komið upp.</p>
-
-<p>Auk starfs míns hef ég mikinn áhuga á ferðalögum innanlands, fjallaferðum, jeppaakstri og veiði. Ég er fjölskyldumaður og á fjögur börn, sem hefur mótað sýn mína á ábyrgð og mikilvægi öryggis í daglegu lífi.</p>
-
+<p>
+Ég hef um árabil starfað á sviði bifreiða og öðlast víðtæka reynslu og þekkingu á þeim vettvangi. Ég útskrifaðist úr bifreiðasmíði árið 2002 og starfaði í kjölfarið á verkstæðum um árabil. Síðar lauk ég löggildingu sem bílasali og hef starfað við sölu bifreiða í um 15 ár. Í júní 2026 útskrifaðist ég sem ökukennari.
+</p>
+<p>
+Í kennslu legg ég ríka áherslu á þolinmæði, skýr samskipti og einstaklingsmiðaða nálgun. Ég tel mikilvægt að nemendur fái svigrúm til að læra á sínum hraða og að kennslan taki mið af ólíkum þörfum og bakgrunni þeirra. Markmið mitt er að skapa öruggt og uppbyggilegt námsumhverfi þar sem traust ríkir og nemendur öðlast sjálfstraust í akstri. Ég legg jafnframt áherslu á ábyrgð, öryggi í umferðinni og góða dómgreind, sem eru lykilatriði í þjálfun nýrra ökumanna.
+</p>
+<p>
+Starfsreynsla mín hefur kennt mér að vera úrræðagóður og lausnamiðaður, eiginleikar sem nýtast vel í kennslu þar sem ólíkar aðstæður geta komið upp.
+</p>
+<p>
+Auk starfs míns hef ég mikinn áhuga á ferðalögum innanlands, fjallaferðum, jeppaakstri og veiði. Ég er fjölskyldumaður og á fjögur börn, sem hefur mótað sýn mína á ábyrgð og mikilvægi öryggis í daglegu lífi.
+</p>
 </div>
 </section>
 
 <section id="ferli">
 <h2>Að byrja ökunám</h2>
 <div class="card">
-
 <p><strong>Ferill ökunáms</strong></p>
 
-<ol>
-<li>Finna ökukennara</li>
-<li>Sækja um námsheimild</li>
-<li>Ökunámsbók</li>
-<li>Fyrsti ökutíminn</li>
-<li>Ökuskóli 1</li>
-<li>Ökutímar</li>
-<li>Æfingaakstur</li>
-<li>Ökuskóli 2</li>
-<li>Ökuskóli 3 og ökugerði</li>
-<li>Bóklegt próf</li>
-<li>Undirbúningur verklegs prófs</li>
-<li>Verklegt próf</li>
-<li>Bráðabirgðaskírteini</li>
-<li>Akstursmat</li>
-<li>Fullnaðarskírteini</li>
-</ol>
+<p>1. Finna ökukennara – fyrsta skrefið.</p>
 
-<p>Ferlið er stigskipt og byggir á markvissri þjálfun frá fyrstu tímum að sjálfstæðum akstri.</p>
+<p>2. Sækja um námsheimild – umsókn + mæta með mynd.</p>
+
+<p>3. Ökunámsbók – heldur utan um allt nám.</p>
+
+<p>4. Fyrsti ökutíminn – akstur hefst.</p>
+
+<p>5. Ökuskóli 1 – reglur, merki og sálfræði.</p>
+
+<p>6. Ökutímar – minnst 10 áður en æfingaakstur hefst.</p>
+
+<p>7. Æfingaakstur – með leiðbeinanda.</p>
+
+<p>8. Ökuskóli 2 – bóklegt nám.</p>
+
+<p>9. Ökuskóli 3 – hálkuakstur og öryggi.</p>
+
+<p>10. Bóklegt próf – 50 spurningar.</p>
+
+<p>11. Undirbúningur – 17–25 tímar.</p>
+
+<p>12. Verklegt próf – munnlegt + akstur.</p>
+
+<p>13. Bráðabirgðaskírteini.</p>
+
+<p>14. Akstursmat – sjálfsmat og endurgjöf.</p>
+
+<p>15. Fullnaðarskírteini.</p>
 
 </div>
 </section>
@@ -160,24 +155,36 @@ ul, ol { padding-left: 25px; line-height: 1.8; }
 <h2>Námskrá</h2>
 <div class="card">
 
-<p><strong>Námsáætlun – Verklegt ökunám (fyrstu 10 kennslustundir)</strong></p>
+<h3>Námsáætlun – Verklegt ökunám (fyrstu 10 kennslustundir)</h3>
 
-<p>Markmið námsáætlunarinnar er að leiða nemandann markvisst í gegnum stigskipta færniþróun í átt að því að verða öruggur, ábyrgur og sjálfstæður ökumaður.</p>
+<p>
+Markmið námsáætlunarinnar er að leiða nemandann markvisst í gegnum stigskipta færniþróun í átt að því að verða öruggur, ábyrgur og sjálfstæður ökumaður. Kennslan byggir á hæfniviðmiðum verklegs ökunáms samkvæmt námskrá þar sem lögð er áhersla á samspil tæknilegrar færni, umferðarvitundar, ákvarðanatöku og framsýni.
+</p>
 
-<h3>Tímar 1–2</h3>
-<p>Undirstöðuatriði og öryggisþættir...</p>
+<h3>Tímar 1–2 – Undirstöðuatriði og öryggisþættir</h3>
+<p>
+Í upphafi náms er lögð áhersla á öryggi, rétta akstursstöðu og undirbúning. Nemandinn lærir stjórntæki, ræsingu og stöðvun.
+</p>
 
-<h3>Tímar 3–4</h3>
-<p>Grunnfærni og stjórnun ökutækis...</p>
+<h3>Tímar 3–4 – Grunnfærni</h3>
+<p>
+Nemandinn þróar samhæfingu, gírskiptingar og hraðastjórnun.
+</p>
 
-<h3>Tímar 5–6</h3>
-<p>Þátttaka í umferð og ákvarðanataka...</p>
+<h3>Tímar 5–6 – Umferð og ákvarðanir</h3>
+<p>
+Æfing í raunverulegri umferð, ákvarðanataka og aðlögun.
+</p>
 
-<h3>Tímar 7–8</h3>
-<p>Framsýni og sjálfstæður akstur...</p>
+<h3>Tímar 7–8 – Sjálfstæði</h3>
+<p>
+Framsýni, leiðaval og sjálfstæður akstur.
+</p>
 
-<h3>Tímar 9–10</h3>
-<p>Hættumat og samþætting færni...</p>
+<h3>Tímar 9–10 – Hættumat</h3>
+<p>
+Samþætting færni og viðbrögð við hættu.
+</p>
 
 </div>
 </section>
@@ -186,17 +193,16 @@ ul, ol { padding-left: 25px; line-height: 1.8; }
 <h2>Kostnaður ökunáms</h2>
 <div class="card">
 
-<p><strong>Hver er heildarkostnaður fyrir allt ökunámið?</strong></p>
+<p><strong>Áætlaður kostnaður: 385.000 kr</strong></p>
 
 <ul>
-<li>Lágmarksökutímar: 262.500 kr</li>
+<li>Ökutímar: 262.500 kr</li>
 <li>Bíll í prófi: 17.500 kr</li>
 <li>Ökuskólar: 21.800 – 50.000 kr</li>
-<li>Próf: 7.583 – 19.619 kr</li>
+<li>Skriflegt próf: 7.583 kr</li>
+<li>Verklegt próf: 19.619 kr</li>
 <li>Ökuskírteini: 4.000 kr</li>
 </ul>
-
-<p>Heildarkostnaður: um 385.000 kr</p>
 
 </div>
 </section>
@@ -205,21 +211,29 @@ ul, ol { padding-left: 25px; line-height: 1.8; }
 <h2>Kennslufræðin</h2>
 <div class="card">
 
-<p><strong>Ökunám og kennslufræði</strong></p>
+<p>
+Ökunám er flókið námsferli sem felur í sér samspil hugrænna, tilfinningalegra og félagslegra þátta.
+</p>
 
-<p>Ökunám er flókið námsferli sem felur í sér samspil hugrænna, tilfinningalegra og félagslegra þátta...</p>
+<p>
+Kennari þarf að styðja nemanda með markvissri kennslu, endurgjöf og öryggi.
+</p>
 
-<p>Markmið verkefnisins er að styðja nemendur í fyrstu skrefum...</p>
+<p>
+Stigvaxandi kennsla og sjálfstraust eru lykilatriði í árangri.
+</p>
 
 </div>
 </section>
 
-<section id="contact">
+<section id="samband">
 <h2>Hafa samband</h2>
 <div class="card">
+
 <p><strong>Eggert ökukennari</strong></p>
-<p>📞 855-5535</p>
-<p>📧 eggertokukennari@eggertokukennari.is</p>
+<p>Sími: 855-5535</p>
+<p>eggertokukennari@eggertokukennari.is</p>
+
 </div>
 </section>
 
